@@ -1,0 +1,41 @@
+@import "bourbon/bourbon";
+
+
+$XS:     321px; 
+$S:		500px; 
+$S-M:	600px; 
+$M:     768px; 
+$M-L:	975px;    
+$L:     1170px;     
+$XL:	1450px;
+$XXL:	2000px;
+
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+
+  @if $canvas == S-M {
+   @media only screen and (min-width: $S-M) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == M-L {
+   @media only screen and (min-width: $M-L) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+  @else if $canvas == XL {
+   @media only screen and (min-width: $XL) { @content; } 
+  }
+  @else if $canvas == XXL {
+   @media only screen and (min-width: $XXL) { @content; } 
+  }
+}
+
+#content {
+	background: hotpink;
+}
