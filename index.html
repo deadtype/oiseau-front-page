@@ -172,64 +172,190 @@ html {  padding-top:40px; } body { position:relative;}
 	<div id="content-holder">
 		<main id="content" role="main">
 			<div class='front-page'>
+
+				<section class='hero-section about-us'>
+					<header>
+						Hello! Thanks for popping over.
+					</header>
+					<div class='content'>
+						<div class='copy'>
+							We’re a brand new coffee roastery looking forward to roast some awesome coffee beans for you.
+						</div>
+						<div class='action'>
+							Learn More About Us
+						</div>
+					</div>
+				</section>
+
+				<div class='collections-container'>
+					<section class='collection yellow-coffee-section'>
+						<header>
+							Yellow Collection
+						</header>
+						<div class='content'>
+							Coffees in our Yellow Collection take you to new places. Expect more vibrant and dynamic tastes.
+						</div>
+						<div class='action'>
+							Browse coffee
+						</div>
+					</section>
+					<section class='collection blue-coffee-section'>
+						<header>
+							Blue Collection
+						</header>
+						<div class='content'>
+							Coffees in our Blue Collection are like trusty companions. Expect cozy and familiar tastes.
+						</div>
+						<div class='action'>
+							Browse coffee
+						</div>
+					</section>
+					<section class='collection red-coffee-section'>
+						<header>
+							Red Collection
+						</header>
+						<div class='content'>
+							Coffees in our Red Collection are like fireworks. Expect unique, exotic tastes.
+						</div>
+						<div class='action'>
+							Browse coffee
+						</div>
+					</section>
+				</div>
+
+				<div class="additional-pages-container">
+
+					<div class='sidebar'>
+						<section class='montly-subsription-section alternative-style'>
+							<div class='content'>
+								Get coffee delivered right to your home, office or other favourite place every month.
+							</div>
+
+							<header>
+								Monthly Subscriptions
+							</header>
+							<div class='stylistic-image'>
+								<img src='/assets/monthly-subscription-image.png'>
+							</div>
+							<div class='action'>
+								More Info
+							</div>
+						</section>
+
+						<section class='chat-blog-section'>
+							<header>
+								Oiseau<br>& Chat<br>Blog
+							</header>
+							<div class='content'>
+								Latest post about why Oiseau Coffee was born.
+							</div>
+							<div class='action'>
+								Read More
+							</div>
+
+						</section>
+					</div>
+
+					<div class='main-section-container'>
+						<section class='tips-section'>
+							<header>
+								Coffee Tips
+							</header>
+							<div class='content'>
+								Brew guides, suggested equipment, helpful links and articles … all you need to know about coffee.
+							</div>
+							<div class='action'>
+								Learn More
+							</div>
+						</section>
+
+						<section class='wholesale-section alternative-style'>
+							<div class='content'>
+								Would you like to be a partner?  We’d love to chat with you.
+							</div>
+							<header>
+								Wholesale Info
+							</header>
+							<div class='action-image-container'>
+								<div class='action'>
+									Find Out More
+								</div>
+								<div class='image'>
+									<img src='/assets/wholesale-info-image.png'>
+								</div>
+							</div>
+						</section>
+
+						<section class='origami-footer-section'>
+							<div class='logo'>
+								<img src='/assets/bird-logo.png'>
+							</div>
+							<div class='caption'>
+								Origami Coffee Roasters
+							</div>
+						</section>
+
+					</div>
+
+				</div>
 			</div>
 		</main>
 	</div>
 
-<script type="text/javascript">
-	
-		// Saving theme settings and local translations as global variables
+	<script type="text/javascript">
 		
-		jQuery.themeSettings = {
-			newsletter_check: "true",
-			newsletter_auto: "10",
-			newsletter_mobile: "true",
-			carousel_transition: "fade",
-			carousel_autoplay: "true",
-			carousel_timer: "30",
-			collections_size: "small",
-			collections_border: "no",
-			truncated_description: "true",
-			truncated_description_lines: 123,
-			cart_action: "overlay",
-			gallery_max_size: "false",
-			gallery_resizing: "fill",
-			gallery_transition: "slide",
-		}
-		
-		jQuery.themeWords = {
-			general_newsletter_content_html: "Stay up to date on the latest product releases, special offers & news by signing up for our newsletter. ",
-			products_page_share_text: "Spread the word",
-			products_page_more_description_label: "Show more",
-			products_page_less_description_label: "Show less",
-			suffixAgo: "ago",
-			suffixFromNow: "from now",
-			seconds: "less than a minute",
-			minute: "about a minute",
-			minutes: "%d minutes",
-			hour: "about an hour",
-			hours: "about %d hours",
-			day: "a day",
-			days: "%d days",
-			month: "about a month",
-			months: "%d months",
-			year: "%d years",
-			years: "ago"
-		}
+			// Saving theme settings and local translations as global variables
+			
+			jQuery.themeSettings = {
+				newsletter_check: "true",
+				newsletter_auto: "10",
+				newsletter_mobile: "true",
+				carousel_transition: "fade",
+				carousel_autoplay: "true",
+				carousel_timer: "30",
+				collections_size: "small",
+				collections_border: "no",
+				truncated_description: "true",
+				truncated_description_lines: 123,
+				cart_action: "overlay",
+				gallery_max_size: "false",
+				gallery_resizing: "fill",
+				gallery_transition: "slide",
+			}
+			
+			jQuery.themeWords = {
+				general_newsletter_content_html: "Stay up to date on the latest product releases, special offers & news by signing up for our newsletter. ",
+				products_page_share_text: "Spread the word",
+				products_page_more_description_label: "Show more",
+				products_page_less_description_label: "Show less",
+				suffixAgo: "ago",
+				suffixFromNow: "from now",
+				seconds: "less than a minute",
+				minute: "about a minute",
+				minutes: "%d minutes",
+				hour: "about an hour",
+				hours: "about %d hours",
+				day: "a day",
+				days: "%d days",
+				month: "about a month",
+				months: "%d months",
+				year: "%d years",
+				years: "ago"
+			}
 
-		
-		
-		
+			
+			
+			
 
-		jQuery.themeAssets = {
-			arrowLeft: '<svg version="1.1" class="svg left" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve"><g><path d="M24.294,33.641c-0.908-0.991-1.694-1.745-2.357-2.261c-0.663-0.517-1.289-0.901-1.877-1.154v-0.461c0.677-0.329,1.333-0.748,1.969-1.256c0.635-0.51,1.395-1.257,2.276-2.242h0.79c-0.643,1.375-1.316,2.431-2.021,3.169l16.355,0v1.036l-16.355,0c0.52,0.657,0.882,1.147,1.086,1.471c0.206,0.325,0.51,0.891,0.912,1.697H24.294z"/></g></svg>',
-			arrowRight: '<svg version="1.1" class="svg right" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve"><g><path d="M35.195,26.268c0.908,0.991,1.694,1.745,2.357,2.261c0.663,0.517,1.289,0.901,1.877,1.154v0.461c-0.677,0.328-1.333,0.747-1.969,1.256c-0.636,0.51-1.395,1.257-2.276,2.241h-0.79c0.643-1.375,1.316-2.431,2.021-3.169H20.06v-1.036h16.355c-0.52-0.656-0.882-1.146-1.087-1.471s-0.51-0.891-0.912-1.697H35.195z"/></g></svg>',
-			arrowDown: '<svg version="1.0" class="svg arrow" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="7px" height="4px" viewBox="0 0 7 4" enable-background="new 0 0 7 4" xml:space="preserve"><polygon points="7.006,-0.044 3.5,3.961 -0.006,-0.044 "/></svg>'
-		}</script>
-<script src="//cdn.shopify.com/s/files/1/0981/7176/t/3/assets/js_plugins.min.js?13847943564494763467" type="text/javascript">
-</script>
-<script src="//cdn.shopify.com/s/files/1/0981/7176/t/3/assets/js_scripts.min.js?13847943564494763467" type="text/javascript">
-</script>
+			jQuery.themeAssets = {
+				arrowLeft: '<svg version="1.1" class="svg left" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve"><g><path d="M24.294,33.641c-0.908-0.991-1.694-1.745-2.357-2.261c-0.663-0.517-1.289-0.901-1.877-1.154v-0.461c0.677-0.329,1.333-0.748,1.969-1.256c0.635-0.51,1.395-1.257,2.276-2.242h0.79c-0.643,1.375-1.316,2.431-2.021,3.169l16.355,0v1.036l-16.355,0c0.52,0.657,0.882,1.147,1.086,1.471c0.206,0.325,0.51,0.891,0.912,1.697H24.294z"/></g></svg>',
+				arrowRight: '<svg version="1.1" class="svg right" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve"><g><path d="M35.195,26.268c0.908,0.991,1.694,1.745,2.357,2.261c0.663,0.517,1.289,0.901,1.877,1.154v0.461c-0.677,0.328-1.333,0.747-1.969,1.256c-0.636,0.51-1.395,1.257-2.276,2.241h-0.79c0.643-1.375,1.316-2.431,2.021-3.169H20.06v-1.036h16.355c-0.52-0.656-0.882-1.146-1.087-1.471s-0.51-0.891-0.912-1.697H35.195z"/></g></svg>',
+				arrowDown: '<svg version="1.0" class="svg arrow" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="7px" height="4px" viewBox="0 0 7 4" enable-background="new 0 0 7 4" xml:space="preserve"><polygon points="7.006,-0.044 3.5,3.961 -0.006,-0.044 "/></svg>'
+			}</script>
+	<script src="//cdn.shopify.com/s/files/1/0981/7176/t/3/assets/js_plugins.min.js?13847943564494763467" type="text/javascript">
+	</script>
+	<script src="//cdn.shopify.com/s/files/1/0981/7176/t/3/assets/js_scripts.min.js?13847943564494763467" type="text/javascript">
+	</script>
 </body>
 
 </html>
