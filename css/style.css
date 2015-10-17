@@ -14,9 +14,11 @@
     line-height: 1.8; }
   .front-page .line-break {
     display: none; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 600px) {
       .front-page .line-break {
         display: inline; } }
+  .front-page svg {
+    width: 100%; }
 
 section, .section {
   padding: 2em; }
@@ -25,7 +27,7 @@ section, .section {
   width: 100%;
   position: relative;
   padding: 0; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 600px) {
     .hero-section {
       height: 75vh;
       min-height: 400px; } }
@@ -57,7 +59,7 @@ section, .section {
     align-items: flex-start;
     -ms-flex-align: start;
     width: 100%; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 600px) {
       .hero-section .copy-action-container {
         -webkit-box-orient: horizontal;
         -moz-box-orient: horizontal;
@@ -91,7 +93,7 @@ section, .section {
     font-size: 3em;
     line-height: 1.2;
     margin-bottom: 2em; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 600px) {
       .hero-section header {
         font-size: 5em; } }
   .hero-section .content {
@@ -104,7 +106,7 @@ section, .section {
     flex: 1;
     margin-bottom: 2em;
     font-size: 1em; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 600px) {
       .hero-section .content {
         margin-bottom: 0em;
         margin-right: 2em;
@@ -249,7 +251,7 @@ section, .section {
   -moz-flex-direction: column;
   flex-direction: column;
   -ms-flex-direction: column; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 600px) {
     .collections-container, .additional-pages-container {
       -webkit-box-orient: horizontal;
       -moz-box-orient: horizontal;
@@ -290,6 +292,15 @@ section, .section {
   -moz-flex-direction: column;
   flex-direction: column;
   -ms-flex-direction: column;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
   -webkit-box-align: start;
   -moz-box-align: start;
   box-align: start;
@@ -313,7 +324,7 @@ section, .section {
     width: 80%; }
   .collection .action-icon {
     width: 1em; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 600px) {
     .collection {
       -webkit-box-flex: 1;
       -moz-box-flex: 1;
@@ -368,7 +379,7 @@ section, .section {
   -o-align-items: flex-start;
   align-items: flex-start;
   -ms-flex-align: start; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 600px) {
     .sidebar {
       -webkit-box-flex: 1;
       -moz-box-flex: 1;
@@ -405,7 +416,7 @@ section, .section {
   -o-align-items: flex-start;
   align-items: flex-start;
   -ms-flex-align: start; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 600px) {
     .main-section-container {
       -webkit-box-flex: 2;
       -moz-box-flex: 2;
@@ -415,7 +426,7 @@ section, .section {
       -ms-flex: 2;
       flex: 2; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .main-section-container {
     display: -webkit-box;
     display: -moz-box;
@@ -571,7 +582,7 @@ section, .section {
   padding: 0;
   width: 100%;
   text-align: right; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 600px) {
     .tips-section {
       -webkit-box-flex: 8;
       -moz-box-flex: 8;
@@ -648,7 +659,7 @@ section, .section {
     font-size: 1em;
     width: 80%;
     margin-bottom: 4em; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 600px) {
       .tips-section .content {
         width: 60%; } }
   .tips-section .header-content {
@@ -685,7 +696,7 @@ section, .section {
   background: black;
   width: 100%;
   padding-right: 0; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 600px) {
     .wholesale-section {
       -webkit-box-flex: 6;
       -moz-box-flex: 6;
@@ -760,7 +771,7 @@ section, .section {
     line-height: 1.3;
     font-weight: 300;
     width: 80%; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 600px) {
       .wholesale-section .content {
         width: 60%; } }
   .wholesale-section .action-image-container {
@@ -789,8 +800,17 @@ section, .section {
     -ms-align-items: flex-end;
     -o-align-items: flex-end;
     align-items: flex-end;
-    -ms-flex-align: end; }
-    @media only screen and (min-width: 768px) {
+    -ms-flex-align: end;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify; }
+    @media only screen and (min-width: 600px) {
       .wholesale-section .action-image-container {
         -webkit-box-orient: horizontal;
         -moz-box-orient: horizontal;
@@ -801,19 +821,10 @@ section, .section {
         -webkit-flex-direction: row;
         -moz-flex-direction: row;
         flex-direction: row;
-        -ms-flex-direction: row;
-        -webkit-box-pack: justify;
-        -moz-box-pack: justify;
-        box-pack: justify;
-        -webkit-justify-content: space-between;
-        -moz-justify-content: space-between;
-        -ms-justify-content: space-between;
-        -o-justify-content: space-between;
-        justify-content: space-between;
-        -ms-flex-pack: justify; } }
+        -ms-flex-direction: row; } }
   .wholesale-section .action {
     margin-right: 2em; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 600px) {
       .wholesale-section .action {
         margin-bottom: 0;
         margin-right: 2em; } }
