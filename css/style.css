@@ -27,7 +27,7 @@ section, .section {
   padding: 0; }
   @media only screen and (min-width: 768px) {
     .hero-section {
-      height: 70vh;
+      height: 75vh;
       min-height: 400px; } }
   .hero-section .copy-action-container {
     display: -webkit-box;
@@ -109,7 +109,7 @@ section, .section {
         margin-bottom: 0em;
         margin-right: 2em;
         max-width: 600px;
-        font-size: 1.2em; } }
+        font-size: 1.25em; } }
   .hero-section .action-text {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -159,6 +159,18 @@ section, .section {
       text-shadow: none; }
     .action:hover .action-icon svg {
       fill: black; }
+  .action.on-white {
+    color: #333;
+    border-color: #333; }
+    .action.on-white .action-icon svg {
+      fill: black; }
+    .action.on-white:hover {
+      background: black;
+      color: white; }
+      .action.on-white:hover .action-text {
+        text-shadow: none; }
+      .action.on-white:hover .action-icon svg {
+        fill: white; }
   .action.plain {
     border: none;
     padding: 0;
@@ -171,6 +183,12 @@ section, .section {
         text-shadow: none; }
       .action.plain:hover svg {
         fill: white; }
+  .action.smaller {
+    font-size: .8em;
+    font-weight: 600;
+    padding: .25em .75em .25em 1em; }
+    .action.smaller .action-text {
+      margin-right: 4em; }
 
 .action-icon {
   width: 1.1em;
@@ -204,9 +222,10 @@ section, .section {
 
 .action-text {
   margin-right: 1.25em;
-  letter-spacing: .3px; }
+  letter-spacing: .3px;
+  white-space: nowrap; }
 
-.collections-container {
+.collections-container, .additional-pages-container {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -225,7 +244,7 @@ section, .section {
   flex-direction: column;
   -ms-flex-direction: column; }
   @media only screen and (min-width: 768px) {
-    .collections-container {
+    .collections-container, .additional-pages-container {
       -webkit-box-orient: horizontal;
       -moz-box-orient: horizontal;
       box-orient: horizontal;
@@ -277,14 +296,14 @@ section, .section {
   padding-bottom: 1em; }
   .collection header {
     font-weight: 600;
-    margin-bottom: 7em;
-    font-size: .9em;
+    margin-bottom: 8em;
+    font-size: .85em;
     letter-spacing: .3px; }
   .collection .collection-title {
     font-weight: 600; }
   .collection .content {
     font-size: .85em;
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
     width: 80%; }
   .collection .action-icon {
     width: 1em; }
@@ -313,9 +332,162 @@ section, .section {
   .red-coffee-section:hover {
     background: #d81914; }
 
+.sidebar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-align: start; }
+  @media only screen and (min-width: 768px) {
+    .sidebar {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      box-flex: 1;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1; } }
+
+@media only screen and (min-width: 768px) {
+  .main-section-container {
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    box-flex: 2;
+    -webkit-flex: 2;
+    -moz-flex: 2;
+    -ms-flex: 2;
+    flex: 2; } }
+
+.button-aligment {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-align: start; }
+
+.montly-subsription-section {
+  color: #333;
+  text-shadow: none;
+  padding-bottom: 3em;
+  -webkit-box-flex: 4;
+  -moz-box-flex: 4;
+  box-flex: 4;
+  -webkit-flex: 4;
+  -moz-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify; }
+  .montly-subsription-section .content {
+    font-weight: 300;
+    font-size: 1.6em;
+    margin-bottom: 1em; }
+  .montly-subsription-section header {
+    font-size: .85em;
+    font-weight: 600; }
+  .montly-subsription-section .stylistic-image {
+    margin: 5em 0 3em; }
+  .montly-subsription-section img {
+    width: 100%; }
+
+.chat-blog-section {
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 5;
+  -moz-box-flex: 5;
+  box-flex: 5;
+  -webkit-flex: 5;
+  -moz-flex: 5;
+  -ms-flex: 5;
+  flex: 5; }
+  .chat-blog-section header {
+    font-size: 3.5em;
+    line-height: 1.4;
+    margin-bottom: 2em; }
+  .chat-blog-section .content {
+    font-size: 1.1em;
+    margin-bottom: 2.5em;
+    width: 80%; }
+
+.inner-shade {
+  padding: 2em;
+  width: 100%; }
+
 .hero-section .inner-shade {
   height: 100%;
-  padding: 2em;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.4+100 */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -358,5 +530,56 @@ section, .section {
   -ms-justify-content: space-between;
   -o-justify-content: space-between;
   justify-content: space-between;
-  -ms-flex-pack: justify;
-  width: 100%; }
+  -ms-flex-pack: justify; }
+
+.chat-blog-section .inner-shade {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.85+0,0+52 */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjg1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjUyJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.85) 0%, transparent 52%, transparent 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.85)), color-stop(52%, transparent), color-stop(100%, transparent));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.85) 0%, transparent 52%, transparent 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.85) 0%, transparent 52%, transparent 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.85) 0%, transparent 52%, transparent 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, transparent 52%, transparent 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=1 );
+  /* IE6-8 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify; }
