@@ -1,2 +1,236 @@
 #content {
-  background: hotpink; }
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",  Helvetica, Arial, "Lucida Grande", sans-serif;
+  background: white; }
+
+.front-page {
+  color: white;
+  text-shadow: 0 0 3px #666666; }
+  .front-page a {
+    color: white; }
+  .front-page header {
+    font-weight: 100;
+    line-height: 1; }
+  .front-page .content {
+    line-height: 1.8; }
+  .front-page .line-break {
+    display: none; }
+    @media only screen and (min-width: 768px) {
+      .front-page .line-break {
+        display: inline; } }
+
+section {
+  padding: 2em; }
+
+.hero-section {
+  min-height: 400px;
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  padding: 0; }
+  .hero-section .copy-action-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -o-align-items: flex-start;
+    align-items: flex-start;
+    -ms-flex-align: start;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .hero-section .copy-action-container {
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+        -ms-flex-pack: justify;
+        -webkit-box-align: end;
+        -moz-box-align: end;
+        box-align: end;
+        -webkit-align-items: flex-end;
+        -moz-align-items: flex-end;
+        -ms-align-items: flex-end;
+        -o-align-items: flex-end;
+        align-items: flex-end;
+        -ms-flex-align: end; } }
+  .hero-section header {
+    font-size: 3em; }
+    @media only screen and (min-width: 768px) {
+      .hero-section header {
+        font-size: 5em; } }
+  .hero-section .content {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 2em;
+    font-size: 1em; }
+    @media only screen and (min-width: 768px) {
+      .hero-section .content {
+        margin-bottom: 0em;
+        margin-right: 2em;
+        max-width: 600px;
+        font-size: 1.2em; } }
+
+.action {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  border: 1px solid white;
+  padding: .5em .5em .5em 1em;
+  width: auto;
+  -webkit-transition: background 0.2s, color 0.2s;
+  -moz-transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s; }
+  .action:hover {
+    background: white;
+    color: black; }
+    .action:hover .action-text {
+      text-shadow: none; }
+    .action:hover .action-icon svg {
+      fill: black; }
+
+.action-icon {
+  width: 1.2em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center; }
+  .action-icon svg {
+    fill: white; }
+
+.action-text {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 1.25em; }
+
+.hero-section .inner-shade {
+  height: 100%;
+  padding: 2em;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.4+100 */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.4)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 );
+  /* IE6-8 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  width: 100%; }

@@ -37,5 +37,148 @@ $XXL:	2000px;
 }
 
 #content {
-	background: hotpink;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  background: white;
+}
+
+.front-page {
+	color: white;
+	text-shadow: 0 0 3px hsl(0,0%,40%);
+	a {
+		color: white;
+	}
+	header {
+		font-weight: 100;
+		line-height: 1;
+	}
+
+	.content {
+		line-height: 1.8;
+	}
+
+	.line-break {
+		display: none;
+		@include MQ(M) {
+			display: inline;
+		}
+
+	}
+}
+
+section {
+	padding: 2em;
+}
+
+.hero-section {
+	min-height: 400px;
+	height: 70vh;
+	width: 100%;
+	position: relative;
+	padding: 0;
+	.copy-action-container {
+			@include display(flex);
+			@include flex-direction(column);
+			@include align-items(flex-start);
+
+			width: 100%;
+
+			@include MQ(M) {
+				@include flex-direction(row);
+				@include justify-content(space-between);
+				@include align-items(flex-end);
+
+			}
+	}
+
+	header {
+		font-size: 3em;
+				@include MQ(M) {
+					font-size: 5em;
+				}
+
+	}
+
+	.content {
+		@include flex(1);
+		margin-bottom: 2em;
+		font-size: 1em;
+
+		@include MQ(M) {
+			margin-bottom: 0em;
+			margin-right: 2em;
+			max-width: 600px;
+			font-size: 1.2em;
+		}
+
+	}
+}
+
+.action {
+	@include display(flex);
+	@include justify-content(space-between);
+	@include align-items(center);
+	border: 1px solid white;
+	padding: .5em .5em .5em 1em;
+	width: auto;
+
+	@include transition(background .2s, color .2s);
+
+	&:hover {
+		background: white;
+		color: black;
+
+		.action-text {
+			text-shadow: none;
+		}
+
+		.action-icon {
+			svg {
+				fill: black;
+			}
+		}
+	}
+
+}
+
+.action-icon {
+	width: 1.2em;
+		@include display(flex);
+	@include justify-content(center);
+	@include align-items(center);
+	svg {
+		fill: white;
+	}
+
+
+}
+
+.action-text {
+	@include flex(1);
+	margin-right: 1.25em;
+}
+
+.hero-section {
+	.inner-shade {
+		height: 100%;
+
+		padding: 2em;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.4+100 */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 ); /* IE6-8 */
+
+
+		@include display(flex);
+		@include flex-direction(column);
+		@include justify-content(space-between);
+		width: 100%;
+
+	}
 }
