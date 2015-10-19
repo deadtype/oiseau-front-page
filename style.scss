@@ -42,6 +42,35 @@ $XXL:	2000px;
   background: white;
 }
 
+
+.no-flexbox {
+	section, .section {
+		display: block!important;
+		width: 100%!important;
+	}
+	.collection {
+		display: block!important;
+		width: 33.33% !important;
+
+	}
+
+	.hero-section {
+		height: auto;
+	}
+
+	.action-icon {
+		display: none!important;
+	}
+	.action {
+		display: inline-block!important;
+	}
+	.action-text {
+		display: block!important;
+
+	}
+}
+
+
 .front-page {
 	color: white;
 	text-shadow: 0 0 3px hsl(0,0%,40%);
@@ -79,6 +108,7 @@ section, .section {
 	padding: 0;
 
 	@include MQ(S-M) {
+
 		height: 75vh;
 			min-height: 400px;
 
@@ -111,11 +141,14 @@ section, .section {
 	}
 
 	.content {
-		@include flex(1);
+		width: 100%;
 		margin-bottom: 2em;
 		font-size: 1em;
 
 		@include MQ(S-M) {
+			width: auto;
+			@include flex(5);
+
 			margin-bottom: 0em;
 			margin-right: 2em;
 			max-width: 600px;
@@ -124,8 +157,19 @@ section, .section {
 
 	}
 
+	.action {
+		width: auto;
+		@include MQ(S-M) {
+
+			@include flex(2);
+		}
+	}
+
 	.action-text {
+				@include MQ(S-M) {
+
 		@include flex(1);
+	}
 	}
 }
 
@@ -137,6 +181,8 @@ section, .section {
 	padding: .5em .75em .5em 1em;
 	width: auto;
 	border-radius: 2px;
+
+	height: 3em;
 
 
 	@include transition(background .2s, color .2s);
@@ -252,6 +298,7 @@ section, .section {
 .collections-container, .additional-pages-container {
 	@include display(flex);
 	@include flex-direction(column);
+	height: auto;
 
 	@include MQ(S-M) {
 		@include flex-direction(row);
@@ -259,6 +306,8 @@ section, .section {
 	}
 
 }
+
+
 
 .collection {
 	text-shadow: none;
@@ -298,26 +347,29 @@ section, .section {
 }
 
 .yellow-coffee-section {
-	background: #FBCB12;
+	background: darken(#FBCB12, 5%);
 
 	&:hover {
-		background: darken(#FBCB12, 5%);
+		background: #FBCB12;
 		text-shadow: 0 0 4px hsl(0,0%,40%);
 	}
 }
 .blue-coffee-section {
-	background: #3E94D1;
+	background: darken(#3E94D1, 5%);
 	
 	&:hover {
-		background: darken(#3E94D1, 5%);
+			background: #3E94D1;
+
 				text-shadow: 0 0 4px hsl(0,0%,25%);
 
 	}
 }
 .red-coffee-section {
-	background: #EA201B;
+			background: darken(#EA201B, 5%);
+
 	&:hover {
-		background: darken(#EA201B, 5%);
+			background: #EA201B;
+
 				text-shadow: 0 0 4px hsl(0,0%,25%);
 
 	}
@@ -330,7 +382,7 @@ section, .section {
 	@include align-items(flex-start);
 
 	@include MQ(S-M) {
-		@include flex(1);
+		width: 33.33%
 	}
 
 }
@@ -341,17 +393,9 @@ section, .section {
 	@include align-items(flex-start);
 
 	@include MQ(S-M) {
-		@include flex(2);
+		width: 66.66%;
 	}
 
-}
-
-.main-section-container {
-	@include MQ(S-M) {
-		@include display(flex);
-		@include flex-direction(column);
-		@include flex(2);
-	}
 }
 
 
@@ -362,15 +406,27 @@ section, .section {
 }
 
 .montly-subsription-section {
+	min-height: 400px;
 	color: #333;
 	text-shadow: none;
-	@include flex(4);
+	width: 100%;
+
+	@include MQ(S-M) {
+		@include flex(4);
+	}
+
 
 	@include display(flex);
 		@include flex-direction(column);
 		@include justify-content(space-between);
 
+	.content-header {
+		width: 100%;
+		display: block;
+		height: auto;
+	}
 	.content {
+		width: 100%;
 		font-weight: 300;
 		font-size: 1.6em;
 		margin-bottom: 1em;
@@ -382,6 +438,8 @@ section, .section {
 
 	.stylistic-image {
 		margin: 5em 0 3em;
+		width: 100%;
+		display: block;
 	}
 	img {
 		width: 100%;
@@ -390,11 +448,17 @@ section, .section {
 
 
 .chat-blog-section {
+		min-height: 400px;
+
 	padding: 0;
 	width: 100%;
 
+	@include MQ(S-M) {
+
 		@include display(flex);
-	@include flex(5);
+		@include flex(5);
+
+	}
 
 	header {
 		font-size: 3.25em;
@@ -432,11 +496,12 @@ section, .section {
 .tips-section {
 	padding: 0;
 	width: 100%;
+		min-height: 600px;
 
-					@include MQ(S-M) {
 
-	@include flex(8);
-				@include display(flex);
+	@include MQ(S-M) {
+		@include flex(8);
+		@include display(flex);
 		@include justify-content(flex-end);
 	}
 
@@ -450,6 +515,8 @@ section, .section {
 
 	}
 	.inner-shade {
+				min-height: 600px;
+
 		@include flex(1);
 			@include display(flex);
 			@include flex-direction(column);
@@ -457,6 +524,9 @@ section, .section {
 		@include justify-content(space-between);
 	}
 
+	.header-content {
+		width: 100%;
+	}
 	header {
 		font-size: 3.9em;
 		margin-bottom: .25em;
@@ -484,32 +554,31 @@ section, .section {
 }
 
 .wholesale-section {
+	min-height: 425px;
+
 	background: black;
 	width: 100%;
 
 	@include MQ(S-M) {
-	@include flex(6);
+		min-height: 425px;
+		@include flex(6);
 
-	@include display(flex);
-	@include flex-direction(column);
-	@include justify-content(space-between);
-}
+	}
+
 	padding-right: 0;
 
 	.header-content {
 		margin-bottom: 3em;
 	}
+
 	.image {
 		width: 35%;
+
 		img {width: 100%;}
 
-				@include display(flex);
+			@include display(flex);
 			@include align-items(flex-end);
 			@include justify-content(flex-end);
-						@include MQ(S-M) {
-
-						}
-
 	}
 
 	header {
@@ -517,6 +586,7 @@ section, .section {
 		font-weight: 600;
 		margin-top: 2.5em;
 	}
+
 	.content {
 		font-size: 2.3em;
 		line-height: 1.3;
@@ -530,32 +600,26 @@ section, .section {
 	.action-image-container {
 		@include display(flex);
 		@include flex-direction(row);
-			@include align-items(flex-end);
-			@include justify-content(space-between);
-
-
-		@include MQ(S-M) {
-			@include flex-direction(row);
-		}
+		@include align-items(flex-end);
+		@include justify-content(space-between);
+		width: 100%;
 	}
 
 	.action {
 		margin-right: 2em;
 
-		@include MQ(S-M) {
-			margin-bottom: 0;
-			margin-right: 2em;
-		}
+
 	}
 }
 
 .origami-footer-section {
-		@include flex(1);
+		height: 100px;
+
 		width: 100%;
 
 		padding-bottom: .85em;
 
-border-bottom: 3px solid black;
+		border-bottom: 3px solid black;
 		@include display(flex);
 		@include justify-content(space-between);
 		@include align-items(flex-end);
